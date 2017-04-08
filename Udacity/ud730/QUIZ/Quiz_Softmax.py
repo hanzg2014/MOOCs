@@ -8,8 +8,6 @@ def softmax(x):
 #     pass  # TODO: Compute and return softmax(x)  
     return np.exp(x) / np.sum(np.exp(x), axis = 0)
 
-scores = [3.0,1.0,2.0]
-
 if __name__ == '__main__':
     print(softmax(scores))
     
@@ -19,5 +17,5 @@ if __name__ == '__main__':
     plt.title("Softmax([x,ones,ones])")
     plt.xlabel("x")
     plt.ylabel("Probability")
-    plt.legend(lines,["x", "ones1", "ones1"], loc = 7)
+    plt.legend(lines,["x", "1.0", "0.2"], loc = 7)
     plt.show()
